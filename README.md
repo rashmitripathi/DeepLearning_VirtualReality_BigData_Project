@@ -15,3 +15,7 @@ Video:
 
 https://www.youtube.com/playlist?list=PLPkAMj4WkRbf_fZ_huXT1uH973WRmAkLr
 
+
+Presentation
+
+https://drive.google.com/open?id=0B1ZPKLB98Nz2R0xGOHFWM0FzVW8
