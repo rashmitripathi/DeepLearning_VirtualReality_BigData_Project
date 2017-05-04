@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">TensorFlow Source Code Analysis</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+              
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Rashmi Tripathi <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-table"></i> Tables <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="table1.html">Package Info</a>
+                            </li>
+                            <li>
+                                <a href="table2.html">API and Package Relationship</a>
+                            </li>
+                            <li>
+                                <a href="table3.html">API Count per package</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-bar-chart-o"></i> Charts <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li>
+                                <a href="chart1.html">Package Info Chart</a>
+                            </li>
+                            <li>
+                                <a href="chart2.html">API and Package Relationship Chart</a>
+                            </li>
+                            <li>
+                                <a href="chart3.html">API Count per package Chart</a>
+                            </li>
+                        </ul>
+                    </li>
+                   <li>
+                        <a href="r.html"><i class="fa fa-fw fa-wrench"></i>My Research Work</a>
+                    </li>
+                    <li>
+                        <a href="ref.html"><i class="fa fa-fw fa-desktop"></i>References</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Tables
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> Tables
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+           
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>API Count</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Module Name</th>
+                                        <th>API Count</th>                                        
+                                    </tr>
+                                </thead>
+                                <tbody>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/math_ops.py</td>
+  <td align="right">48</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/util/deprecation.py</td>
+  <td align="right">38</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/array_ops.py</td>
+  <td align="right">36</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/metrics/python/ops/metric_ops.py</td>
+  <td align="right">34</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/image_ops_impl.py</td>
+  <td align="right">27</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/metrics_impl.py</td>
+  <td align="right">23</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/sparse_ops.py</td>
+  <td align="right">22</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/ops/variables.py</td>
+  <td align="right">21</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/nn_ops.py</td>
+  <td align="right">21</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/ops/arg_scope.py</td>
+  <td align="right">20</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/select.py</td>
+  <td align="right">19</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/errors_impl.py</td>
+  <td align="right">19</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/ops.py</td>
+  <td align="right">19</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/lookup/lookup_ops.py</td>
+  <td align="right">18</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/check_ops.py</td>
+  <td align="right">17</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/nn_impl.py</td>
+  <td align="right">16</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/feature_column.py</td>
+  <td align="right">14</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/variables.py</td>
+  <td align="right">14</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/input.py</td>
+  <td align="right">14</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/legacy_seq2seq/python/ops/seq2seq.py</td>
+  <td align="right">13</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/lib/io/file_io.py</td>
+  <td align="right">12</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/reroute.py</td>
+  <td align="right">11</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/transform.py</td>
+  <td align="right">11</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/util.py</td>
+  <td align="right">10</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/core_rnn_cell_impl.py</td>
+  <td align="right">10</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/data_flow_ops.py</td>
+  <td align="right">10</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/losses/losses_impl.py</td>
+  <td align="right">10</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/saver.py</td>
+  <td align="right">10</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/example/feature_pb2.py</td>
+  <td align="right">9</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/tf_logging.py</td>
+  <td align="right">9</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/framework/tensor_util.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/edit.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/init_ops.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/summary/summary.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/basic_session_run_hooks.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/monitored_session.py</td>
+  <td align="right">8</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/crf/python/ops/crf.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/feature_column_ops.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/protobuf/config_pb2.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/linalg_ops.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/parsing_ops.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/random_ops.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/test.py</td>
+  <td align="right">7</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/summaries.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/framework/summary_pb2.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/layers/pooling.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/candidate_sampling_ops.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/control_flow_ops.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/io_ops.py</td>
+  <td align="right">6</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/mvn.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/rnn_cell.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/graph_util_impl.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/layers/convolutional.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/clip_ops.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/variable_scope.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/resource_loader.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/learning_rate_decay.py</td>
+  <td align="right">5</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/framework/checkpoint_utils.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/subgraph.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/regularizers.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/estimator.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/framework/attr_value_pb2.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/protobuf/tensorflow_server_pb2.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/util/event_pb2.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/lib/debug_data.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/lib/io/tf_record.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/functional_ops.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/losses/util.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/partitioned_variables.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/sets_impl.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/pywrap_tensorflow.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/signature_def_utils_impl.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/queue_runner_impl.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/session_run_hook.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/util/compat.py</td>
+  <td align="right">4</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/copy_graph/python/util/copy_elements.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/match.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/layers.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/run_config.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/learn_io/graph_io.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/learn_io/pandas_io.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/nn/python/ops/cross_entropy.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/core_rnn.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/fused_rnn_cell.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/lstm_ops.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/seq2seq/python/ops/attention_decoder_fn.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/client/session.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/lib/debug_utils.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/sparse_tensor.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/tensor_util.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/ctc_ops.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/gradients_impl.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/rnn.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/session_ops.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/gfile.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/sysconfig.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/summary/writer/writer_cache.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/coordinator.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/server_lib.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/training_util.py</td>
+  <td align="right">3</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/bernoulli.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/beta.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/chi2.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/distribution_util.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/exponential.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/gamma.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/inverse_gamma.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/kullback_leibler.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/laplace.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/normal.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/normal_conjugate_posteriors.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/student_t.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/wishart.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/image/python/ops/image_ops.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/initializers.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/dnn.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/dnn_linear_combined.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/kmeans.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/linear.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/model_fn.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/learn_io/dask_io.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/monitors.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator_identity.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/opt/python/training/external_optimizer.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/seq2seq/python/ops/decoder_fn.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/example/example_pb2.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/framework/node_def_pb2.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/wrappers/hooks.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/device.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/dtypes.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/load_library.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/meta_graph.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/random_seed.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/tensor_shape.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/test_util.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/layers/core.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/embedding_ops.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/gradient_checker.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/numerics.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/special_math_ops.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/string_ops.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/app.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/loader_impl.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/main_op_impl.py</td>
+  <td align="right">2</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/entropy.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/monte_carlo.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/special_math.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/stochastic_gradient_estimators.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/stochastic_graph.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/stochastic_tensor.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/stochastic_variables.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/bayesflow/python/ops/variational_inference.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/compiler/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/copy_graph/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/crf/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/cudnn_rnn/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/deprecated/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/bijector.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/binomial.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/categorical.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/dirichlet.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/dirichlet_multinomial.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/distribution.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/mixture.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/multinomial.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/poisson.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/quantized_distribution.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/transformed_distribution.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/distributions/python/ops/uniform.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/factorization/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/framework/experimental.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/framework/python/ops/ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/graph_editor/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/grid_rnn/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/image/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/input_pipeline/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/input_pipeline/python/ops/input_pipeline_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/integrate/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/integrate/python/ops/odes.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/labeled_tensor/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/embedding_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/encoders.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/layers/python/layers/optimizers.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/datasets/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/_sklearn.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/constants.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/head.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/logistic_regressor.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/estimators/prediction_key.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/evaluable.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/experiment.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/export_strategy.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/graph_actions.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/learn_io/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/metric_spec.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/models.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/ops/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/preprocessing/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/trainable.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/utils/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/learn/python/learn/utils/input_fn_utils.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/legacy_seq2seq/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator_composition.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator_diag.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator_matrix.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linalg/python/ops/linear_operator_tril.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linear_optimizer/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linear_optimizer/python/ops/sdca_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linear_optimizer/python/ops/sparse_feature_column.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/linear_optimizer/python/sdca_optimizer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/lookup/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/losses/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/metrics/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/metrics/python/metrics/classification.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/metrics/python/ops/confusion_matrix_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/metrics/python/ops/histogram_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/ndlstm/python/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/nn/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/opt/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/opt/python/training/moving_average_optimizer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/opt/python/training/variable_clipping_optimizer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/quantization/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/core_rnn_cell.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/rnn/python/ops/gru_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/seq2seq/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/seq2seq/python/ops/loss.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/seq2seq/python/ops/seq2seq.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/session_bundle/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/slim/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/solvers/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/specs/python/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/stat_summarizer/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/tensor_forest/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/tensorboard/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/testing/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/tfprof/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/training/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/util/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/contrib/util/loader.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/framework/graph_pb2.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/protobuf/meta_graph_pb2.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/core/protobuf/saver_pb2.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/cli/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/lib/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/wrappers/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/wrappers/dumping_wrapper.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/debug/wrappers/local_cli_wrapper.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/constant_op.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/errors.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/graph_io.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/graph_util.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/framework/importer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/layers/layers.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/layers/normalization.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/lib/io/python_io.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/confusion_matrix.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/histogram_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/image_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/logging_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/losses/losses.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/metrics.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/nn.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/rnn_cell_impl.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/script_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/sdca_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/sets.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/summary_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/template.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/ops/tensor_array_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/benchmark.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/platform/flags.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/builder.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/builder_impl.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/constants.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/loader.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/main_op.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/saved_model.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/signature_constants.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/signature_def_utils.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/tag_constants.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/utils.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/saved_model/utils_impl.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/summary/summary_iterator.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/summary/writer/writer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/adadelta.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/adagrad.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/adagrad_da.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/adam.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/basic_loops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/device_setter.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/ftrl.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/gradient_descent.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/momentum.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/moving_averages.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/optimizer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/proximal_adagrad.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/proximal_gradient_descent.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/queue_runner.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/rmsprop.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/session_manager.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/supervisor.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/sync_replicas_optimizer.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/training/training.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/python/user_ops/user_ops.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">tensorflow/tools/__init__.py</td>
+  <td align="right">1</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" class="xl67" style="height:14.5pt">Grand Total</td>
+  <td class="xl67" align="right">1137</td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="495" style="width:372pt"></td>
+  <td width="82" style="width:62pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody>
+                            </table>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

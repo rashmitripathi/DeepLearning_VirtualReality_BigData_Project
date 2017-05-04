@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">TensorFlow Source Code Analysis</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+              
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Rashmi Tripathi <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-table"></i> Tables <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="table1.html">Package Info</a>
+                            </li>
+                            <li>
+                                <a href="table2.html">API and Package Relationship</a>
+                            </li>
+                            <li>
+                                <a href="table3.html">API Count per package</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-bar-chart-o"></i> Charts <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo1" class="collapse">
+                            <li>
+                                <a href="chart1.html">Package Info Chart</a>
+                            </li>
+                            <li>
+                                <a href="chart2.html">API and Package Relationship Chart</a>
+                            </li>
+                            <li>
+                                <a href="chart3.html">API Count per package Chart</a>
+                            </li>
+                        </ul>
+                    </li>
+                   <li>
+                        <a href="r.html"><i class="fa fa-fw fa-wrench"></i>My Research Work</a>
+                    </li>
+                    <li>
+                        <a href="ref.html"><i class="fa fa-fw fa-desktop"></i>References</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Tables
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-table"></i> Tables
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Packages Information</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Level1</th>
+                                        <th>Level2</th>
+                                        <th>Level3</th>
+                                        <th>Level4</th>
+                                        <th>Level5</th>
+                                        <th>Level6</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" class="xl67" style="height:14.5pt">python</td>
+  <td class="xl67">ops</td>
+  <td class="xl67">python</td>
+  <td class="xl67">ops</td>
+  <td>metric_op<span style="display:none">s.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">estimator.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" class="xl67" style="height:14.5pt">contrib</td>
+  <td class="xl67">util</td>
+  <td class="xl67">io</td>
+  <td class="xl67">layers</td>
+  <td>variables.<span style="display:none">py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">run_config.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" class="xl67" style="height:14.5pt">core</td>
+  <td class="xl67">metrics</td>
+  <td class="xl67">losses</td>
+  <td class="xl67">framewor<span style="display:none">k</span></td>
+  <td>seq2seq.p<span style="display:none">y</span></td>
+  <td>dnn.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" class="xl67" style="height:14.5pt">tools</td>
+  <td class="xl67">graph_edi<span style="display:none">tor</span></td>
+  <td class="xl67">lib</td>
+  <td class="xl67">learn</td>
+  <td>core_rnn_<span style="display:none">cell_impl.py</span></td>
+  <td colspan="3" style="mso-ignore:colspan">dnn_linear_combined.py</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt">__init__.p<span style="display:none">y</span></td>
+  <td class="xl67">framewor<span style="display:none">k</span></td>
+  <td class="xl67">writer</td>
+  <td class="xl67">util</td>
+  <td>summarie<span style="display:none">s.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">dask_io.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">lookup</td>
+  <td class="xl67">wrappers</td>
+  <td class="xl67">training</td>
+  <td>checkpoin<span style="display:none">t_utils.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">constants.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">layers</td>
+  <td class="xl67">cli</td>
+  <td class="xl67">metrics</td>
+  <td>copy_ele<span style="display:none">ments.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">prediction_key.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">training</td>
+  <td>ma+C9:C9<span style="display:none">3th_ops.py</span></td>
+  <td>dumping_<span style="display:none">wrapper.py</span></td>
+  <td class="xl67">learn_io</td>
+  <td colspan="2" style="mso-ignore:colspan">graph_io.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">legacy_se<span style="display:none">q2seq</span></td>
+  <td>deprecati<span style="display:none">on.py</span></td>
+  <td>file_io.py</td>
+  <td class="xl67">ops</td>
+  <td colspan="2" style="mso-ignore:colspan">pandas_io.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">lib</td>
+  <td>array_ops<span style="display:none">.py</span></td>
+  <td>losses_im<span style="display:none">pl.py</span></td>
+  <td class="xl67">preproces<span style="display:none">sing</span></td>
+  <td colspan="2" style="mso-ignore:colspan">kmeans.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">rnn</td>
+  <td>image_op<span style="display:none">s_impl.py</span></td>
+  <td>debug_da<span style="display:none">ta.py</span></td>
+  <td class="xl67">utils</td>
+  <td>linear.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">example</td>
+  <td>metrics_i<span style="display:none">mpl.py</span></td>
+  <td>tf_record.<span style="display:none">py</span></td>
+  <td>arg_scope<span style="display:none">.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">model_fn.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">platform</td>
+  <td>sparse_op<span style="display:none">s.py</span></td>
+  <td>util.py</td>
+  <td>feature_c<span style="display:none">olumn.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">__init__.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">summary</td>
+  <td>nn_ops.py</td>
+  <td>debug_uti<span style="display:none">ls.py</span></td>
+  <td>tensor_uti<span style="display:none">l.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">_sklearn.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">crf</td>
+  <td>select.py</td>
+  <td>writer_cac<span style="display:none">he.py</span></td>
+  <td>crf.py</td>
+  <td>head.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">protobuf</td>
+  <td>errors_im<span style="display:none">pl.py</span></td>
+  <td>hooks.py</td>
+  <td>feature_c<span style="display:none">olumn_ops.py</span></td>
+  <td colspan="3" style="mso-ignore:colspan">logistic_regressor.py</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">distributio<span style="display:none">ns</span></td>
+  <td>ops.py</td>
+  <td>sdca_opti<span style="display:none">mizer.py</span></td>
+  <td>mvn.py</td>
+  <td colspan="2" style="mso-ignore:colspan">input_fn_utils.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">learn</td>
+  <td>lookup_o<span style="display:none">ps.py</span></td>
+  <td>__init__.p<span style="display:none">y</span></td>
+  <td colspan="2" style="mso-ignore:colspan">rnn_cell.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">debug</td>
+  <td>check_ops<span style="display:none">.py</span></td>
+  <td>local_cli_<span style="display:none">wrapper.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">regularizers.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td>pywrap_t<span style="display:none">ensorflow.py</span></td>
+  <td>nn_impl.p<span style="display:none">y</span></td>
+  <td>python_io<span style="display:none">.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">estimators</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">saved_mo<span style="display:none">del</span></td>
+  <td>variables.<span style="display:none">py</span></td>
+  <td>losses.py</td>
+  <td>layers.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">copy_grap<span style="display:none">h</span></td>
+  <td>input.py</td>
+  <td>writer.py</td>
+  <td colspan="2" style="mso-ignore:colspan">cross_entropy.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">nn</td>
+  <td colspan="2" style="mso-ignore:colspan">reroute.py</td>
+  <td colspan="2" style="mso-ignore:colspan">core_rnn.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">seq2seq</td>
+  <td colspan="2" style="mso-ignore:colspan">transform.py</td>
+  <td colspan="2" style="mso-ignore:colspan">fused_rnn_cell.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">client</td>
+  <td>util.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">lstm_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">image</td>
+  <td colspan="2" style="mso-ignore:colspan">data_flow_ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan">attention_decoder_fn.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">linalg</td>
+  <td>saver.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">bernoulli.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">opt</td>
+  <td colspan="2" style="mso-ignore:colspan">feature_pb2.py</td>
+  <td>beta.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">__init__.p<span style="display:none">y</span></td>
+  <td colspan="2" style="mso-ignore:colspan">tf_logging.py</td>
+  <td>chi2.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">bayesflow</td>
+  <td>edit.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">distribution_util.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">compiler</td>
+  <td colspan="2" style="mso-ignore:colspan">init_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">exponential.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">cudnn_rn<span style="display:none">n</span></td>
+  <td colspan="2" style="mso-ignore:colspan">summary.py</td>
+  <td colspan="2" style="mso-ignore:colspan">gamma.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">deprecate<span style="display:none">d</span></td>
+  <td colspan="2" style="mso-ignore:colspan">basic_session_run_h<span style="display:none">ooks.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">inverse_gamma.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">factorizati<span style="display:none">on</span></td>
+  <td colspan="2" style="mso-ignore:colspan">monitored_session.<span style="display:none">py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">kullback_leibler.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">grid_rnn</td>
+  <td colspan="2" style="mso-ignore:colspan">config_pb2.py</td>
+  <td colspan="2" style="mso-ignore:colspan">laplace.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">input_pip<span style="display:none">eline</span></td>
+  <td colspan="2" style="mso-ignore:colspan">linalg_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">normal.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">integrate</td>
+  <td colspan="2" style="mso-ignore:colspan">parsing_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan">normal_conjugate_posteriors.py</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">labeled_t<span style="display:none">ensor</span></td>
+  <td colspan="2" style="mso-ignore:colspan">random_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">student_t.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">linear_opt<span style="display:none">imizer</span></td>
+  <td>test.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">wishart.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">losses</td>
+  <td colspan="2" style="mso-ignore:colspan">summary_pb2.py</td>
+  <td colspan="2" style="mso-ignore:colspan">image_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">ndlstm</td>
+  <td colspan="2" style="mso-ignore:colspan">pooling.py</td>
+  <td colspan="2" style="mso-ignore:colspan">initializers.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">quantizati<span style="display:none">on</span></td>
+  <td colspan="2" style="mso-ignore:colspan">candidate_sampling<span style="display:none">_ops.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">monitors.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">session_b<span style="display:none">undle</span></td>
+  <td colspan="2" style="mso-ignore:colspan">control_flow_ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan">linear_operator_identity.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">slim</td>
+  <td>io_ops.py</td>
+  <td></td>
+  <td colspan="3" style="mso-ignore:colspan">external_optimizer.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">solvers</td>
+  <td colspan="2" style="mso-ignore:colspan">graph_util_impl.py</td>
+  <td colspan="2" style="mso-ignore:colspan">decoder_fn.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">specs</td>
+  <td colspan="2" style="mso-ignore:colspan">convolutional.py</td>
+  <td colspan="2" style="mso-ignore:colspan">entropy.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">stat_sum<span style="display:none">marizer</span></td>
+  <td colspan="2" style="mso-ignore:colspan">clip_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">monte_carlo.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">tensor_fo<span style="display:none">rest</span></td>
+  <td colspan="2" style="mso-ignore:colspan">variable_scope.py</td>
+  <td colspan="2" style="mso-ignore:colspan">special_math.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">tensorboa<span style="display:none">rd</span></td>
+  <td colspan="2" style="mso-ignore:colspan">resource_loader.py</td>
+  <td colspan="4" style="mso-ignore:colspan">stochastic_gradient_estimators.py</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">testing</td>
+  <td colspan="2" style="mso-ignore:colspan">learning_rate_decay<span style="display:none">.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">stochastic_graph.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">tfprof</td>
+  <td colspan="2" style="mso-ignore:colspan">subgraph.py</td>
+  <td colspan="3" style="mso-ignore:colspan">stochastic_tensor.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" style="height:14.5pt"></td>
+  <td class="xl67">user_ops</td>
+  <td colspan="2" style="mso-ignore:colspan">attr_value_pb2.py</td>
+  <td colspan="3" style="mso-ignore:colspan">stochastic_variables.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">tensorflow_server_p<span style="display:none">b2.py</span></td>
+  <td colspan="3" style="mso-ignore:colspan">variational_inference.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">event_pb2.py</td>
+  <td colspan="2" style="mso-ignore:colspan">bijector.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">functional_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">binomial.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">partitioned_variable<span style="display:none">s.py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">categorical.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">sets_impl.py</td>
+  <td colspan="2" style="mso-ignore:colspan">dirichlet.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">signature_def_utils_i<span style="display:none">mpl.py</span></td>
+  <td colspan="3" style="mso-ignore:colspan">dirichlet_multinomial.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">queue_runner_impl.<span style="display:none">py</span></td>
+  <td colspan="2" style="mso-ignore:colspan">distribution.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">session_run_hook.p<span style="display:none">y</span></td>
+  <td colspan="2" style="mso-ignore:colspan">mixture.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">compat.py</td>
+  <td colspan="2" style="mso-ignore:colspan">multinomial.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>match.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">poisson.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">session.py</td>
+  <td colspan="3" style="mso-ignore:colspan">quantized_distribution.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">sparse_tensor.py</td>
+  <td colspan="3" style="mso-ignore:colspan">transformed_distribution.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">tensor_util.py</td>
+  <td colspan="2" style="mso-ignore:colspan">uniform.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">ctc_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan">experimental.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">gradients_impl.py</td>
+  <td>ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>rnn.py</td>
+  <td></td>
+  <td colspan="3" style="mso-ignore:colspan">input_pipeline_ops.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">session_ops.py</td>
+  <td>odes.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>gfile.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">embedding_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">sysconfig.py</td>
+  <td colspan="2" style="mso-ignore:colspan">encoders.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">coordinator.py</td>
+  <td colspan="2" style="mso-ignore:colspan">optimizers.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">server_lib.py</td>
+  <td>datasets</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">training_util.py</td>
+  <td colspan="2" style="mso-ignore:colspan">evaluable.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">example_pb2.py</td>
+  <td colspan="2" style="mso-ignore:colspan">experiment.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">node_def_pb2.py</td>
+  <td colspan="2" style="mso-ignore:colspan">export_strategy.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>device.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">graph_actions.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>dtypes.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">metric_spec.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">load_library.py</td>
+  <td colspan="2" style="mso-ignore:colspan">models.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">meta_graph.py</td>
+  <td colspan="2" style="mso-ignore:colspan">trainable.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">random_seed.py</td>
+  <td colspan="2" style="mso-ignore:colspan">linear_operator.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">tensor_shape.py</td>
+  <td colspan="4" style="mso-ignore:colspan">linear_operator_composition.py</td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">test_util.py</td>
+  <td colspan="3" style="mso-ignore:colspan">linear_operator_diag.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>core.py</td>
+  <td></td>
+  <td colspan="3" style="mso-ignore:colspan">linear_operator_matrix.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">embedding_ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan">linear_operator_tril.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">gradient_checker.py</td>
+  <td colspan="2" style="mso-ignore:colspan">sdca_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">numerics.py</td>
+  <td colspan="3" style="mso-ignore:colspan">sparse_feature_column.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">special_math_ops.p<span style="display:none">y</span></td>
+  <td colspan="2" style="mso-ignore:colspan">classification.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">string_ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan">confusion_matrix_ops.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>app.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">histogram_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">loader_impl.py</td>
+  <td colspan="3" style="mso-ignore:colspan">moving_average_optimizer.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">main_op_impl.py</td>
+  <td colspan="3" style="mso-ignore:colspan">variable_clipping_optimizer.py</td>
+  <td></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">__init__.py</td>
+  <td colspan="2" style="mso-ignore:colspan">core_rnn_cell.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>loader.py</td>
+  <td></td>
+  <td colspan="2" style="mso-ignore:colspan">gru_ops.py</td>
+  <td colspan="2" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">graph_pb2.py</td>
+  <td>loss.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">meta_graph_pb2.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">saver_pb2.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">constant_op.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>errors.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">graph_io.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">graph_util.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">importer.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>layers.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">normalization.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">confusion_matrix.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">histogram_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">image_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">logging_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">metrics.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>nn.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">rnn_cell_impl.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">script_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">sdca_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>sets.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">summary_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">template.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">tensor_array_ops.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">benchmark.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>flags.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">builder.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">builder_impl.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">constants.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">main_op.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">saved_model.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">signature_constants.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">signature_def_utils.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">tag_constants.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>utils.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">utils_impl.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">summary_iterator.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">adadelta.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">adagrad.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">adagrad_da.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>adam.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">basic_loops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">device_setter.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td>ftrl.py</td>
+  <td colspan="5" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">gradient_descent.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">momentum.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">moving_averages.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">optimizer.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">proximal_adagrad.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">proximal_gradient_descent.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">queue_runner.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">rmsprop.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">session_manager.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">supervisor.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="3" style="mso-ignore:colspan">sync_replicas_optimizer.py</td>
+  <td colspan="3" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">training.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <tr height="19" style="height:14.5pt">
+  <td height="19" colspan="2" style="height:14.5pt;mso-ignore:colspan"></td>
+  <td colspan="2" style="mso-ignore:colspan">user_ops.py</td>
+  <td colspan="4" style="mso-ignore:colspan"></td>
+ </tr>
+ <!--[if supportMisalignedColumns]-->
+ <tr height="0" style="display:none">
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+  <td width="64" style="width:48pt"></td>
+ </tr>
+ <!--[endif]-->
+</tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+               </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

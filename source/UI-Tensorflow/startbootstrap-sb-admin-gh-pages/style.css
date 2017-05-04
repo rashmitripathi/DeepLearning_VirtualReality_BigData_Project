@@ -1,0 +1,159 @@
+
+ #banner{
+display:block;
+height:20%;
+width:100%;
+position:absolute;
+left:0px;
+top:0px;
+border: none;
+padding: 0;
+margin:0;
+z-index: 10;
+background: url(banner1.jpg)  center top no-repeat;
+background-size:100%;
+ }    
+
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+
+
+.btn-circle {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float: left;
+  border: 1px solid green;    
+
+}
+
+.btn-circlesmall {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 10px 16px;
+  font-size: 8px;
+  line-height: 1.33;
+  border-radius: 75px;
+  white-space: normal;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.75;
+
+}
+.btn-circle:hover {
+ color: white;
+ opacity: 1;
+}
+
+#bodybutton1 {   
+    position:absolute;
+    top:70px; 
+    text-align: center;
+    margin-left: 220px;
+   }
+
+.beforeClick {   
+    position:absolute;
+    top:70px; 
+    text-align: center;
+    margin-left: 275px;
+   }
+   
+
+.afterClick {   
+    position:absolute;
+    top:70px; 
+    text-align: center;
+    margin-left: 45px;
+    border-top-style: hidden;
+    border-right-style: double;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    margin-right: 10px;
+    border-color: green;
+   }
+
+.graphStyle {   
+    position:absolute;
+    top:70px; 
+    text-align: center;
+    margin-left: 10px;
+   }
+         
+#graph {   
+    position:absolute;
+    top:2px 
+    text-align: center;
+    margin-left: 500px;
+   }
+
+.graphContainer{   
+    position:absolute;
+    top:120px; 
+    text-align: center;
+    margin-left: 500px;
+    width: 550px; 
+    height: 10px;
+   }
+
+.graphMap{   
+    position:absolute;
+    top:50px; 
+    text-align: center;
+    margin-left: 400px;
+    width: 700px; 
+    height: 550px;
+   }
+      
+#bottombanner {
+	width: 900px;
+        background-image: url(../images/finished/bottom-grass.jpg);
+        background-position: center bottom;
+	height: 123px;
+	background-repeat: no-repeat;
+}
+
+.centerRow {
+	text-align: center;
+}
+
+
+.node circle {
+   fill: #fff;
+   stroke: steelblue;
+   stroke-width: 3px;
+ }
+
+ .node text { font: 12px sans-serif; }
+
+ .link {
+   fill: none;
+   stroke: #ccc;
+   stroke-width: 2px;
+ }
