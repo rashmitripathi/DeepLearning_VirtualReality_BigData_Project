@@ -13,5 +13,5 @@ The architecture diagram shown in Figure-2 explains how our intelligent model wo
 
 Video:
 
-https://www.youtube.com/watch?v=fLHVT-P2DOI
+https://www.youtube.com/playlist?list=PLPkAMj4WkRbf_fZ_huXT1uH973WRmAkLr
 
